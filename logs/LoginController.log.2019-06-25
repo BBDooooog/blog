@@ -1,0 +1,486 @@
+2019-06-25 16:41:16,254  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 16:41:16,452  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 10228 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 16:41:16,453  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 16:41:17,366  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 16:41:17,461  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 967 ms
+2019-06-25 16:41:17,872  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:41:18,091  INFO UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 6cd4fefe-68e0-4d0d-8781-a091802accc8
+
+2019-06-25 16:41:18,167  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@91da29b, org.springframework.security.web.context.SecurityContextPersistenceFilter@22d9ca63, org.springframework.security.web.header.HeaderWriterFilter@6cfbbff7, org.springframework.security.web.csrf.CsrfFilter@76e90da5, org.springframework.security.web.authentication.logout.LogoutFilter@1de4285e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1084ac45, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b2e5c0d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7066363, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1b90fee4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14c141c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b7c80c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75b38c36, org.springframework.security.web.session.SessionManagementFilter@45b32dfe, org.springframework.security.web.access.ExceptionTranslationFilter@56846330, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4684240f]
+2019-06-25 16:41:18,239  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 16:41:18,242  INFO DemoApplication:59 - Started DemoApplication in 2.116 seconds (JVM running for 2.778)
+2019-06-25 16:41:29,420  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 16:41:29,424  INFO DispatcherServlet:546 - Completed initialization in 4 ms
+2019-06-25 16:41:46,054  INFO LoginController:27 - 当前登陆用户：user
+2019-06-25 16:41:57,317  INFO LoginController:27 - 当前登陆用户：user
+2019-06-25 16:42:00,112  INFO LoginController:27 - 当前登陆用户：user
+2019-06-25 16:42:52,281  INFO LoginController:27 - 当前登陆用户：user
+2019-06-25 16:44:54,754  INFO LoginController:27 - 当前登陆用户：user
+2019-06-25 16:45:01,506  INFO LoginController:27 - 当前登陆用户：user
+2019-06-25 16:45:06,478  INFO LoginController:27 - 当前登陆用户：user
+2019-06-25 16:45:21,853  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:45:24,641  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 16:45:24,768  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 9484 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 16:45:24,769  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 16:45:25,689  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 16:45:25,778  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 975 ms
+2019-06-25 16:45:26,178  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:45:26,397  INFO UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 1e15500d-dd1e-4ca1-a096-2e3e0f9bc2cc
+
+2019-06-25 16:45:26,467  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3becc950, org.springframework.security.web.context.SecurityContextPersistenceFilter@546394ed, org.springframework.security.web.header.HeaderWriterFilter@4214ae8f, org.springframework.security.web.csrf.CsrfFilter@7bc58891, org.springframework.security.web.authentication.logout.LogoutFilter@3513c84c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66bf40e5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6975fb1c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6b9fdbc6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@25c2a9e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2693c618, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32120956, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79476a4e, org.springframework.security.web.session.SessionManagementFilter@22dc59b2, org.springframework.security.web.access.ExceptionTranslationFilter@4c82b5df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4de79b7d]
+2019-06-25 16:45:26,534  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 16:45:26,537  INFO DemoApplication:59 - Started DemoApplication in 1.989 seconds (JVM running for 2.639)
+2019-06-25 16:47:43,459  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 16:47:43,463  INFO DispatcherServlet:546 - Completed initialization in 4 ms
+2019-06-25 16:56:13,496  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:56:16,725  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 16:56:16,854  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 6320 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 16:56:16,855  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 16:56:17,744  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 16:56:17,831  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 939 ms
+2019-06-25 16:56:18,249  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:56:18,467  INFO UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 64c23c4c-ef14-42f6-9a54-cd8a5be0397e
+
+2019-06-25 16:56:18,534  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a36cd5, org.springframework.security.web.context.SecurityContextPersistenceFilter@488f3dd1, org.springframework.security.web.header.HeaderWriterFilter@5ccb85d6, org.springframework.security.web.csrf.CsrfFilter@3b2e5c0d, org.springframework.security.web.authentication.logout.LogoutFilter@7a687d8d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f63a513, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c7f4457, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@53f0d09c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d152bcd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bc58891, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@420cd102, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47acd13b, org.springframework.security.web.session.SessionManagementFilter@259b85d6, org.springframework.security.web.access.ExceptionTranslationFilter@1a464fa3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@234c5e41]
+2019-06-25 16:56:18,597  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 16:56:18,600  INFO DemoApplication:59 - Started DemoApplication in 1.971 seconds (JVM running for 2.761)
+2019-06-25 16:56:51,457  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 16:56:51,465  INFO DispatcherServlet:546 - Completed initialization in 8 ms
+2019-06-25 16:57:47,080  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:57:49,957  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 16:57:50,090  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 14412 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 16:57:50,090  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 16:57:51,069  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 16:57:51,159  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1034 ms
+2019-06-25 16:57:51,581  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:57:51,801  INFO UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: f9a8b21b-1c59-4784-a7b6-d0b13e07c74d
+
+2019-06-25 16:57:51,874  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17b016ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b01a0d, org.springframework.security.web.header.HeaderWriterFilter@2eda072, org.springframework.security.web.csrf.CsrfFilter@3fa7df1, org.springframework.security.web.authentication.logout.LogoutFilter@4091b9c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4733f6f5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62f11ebb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@733ec58b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c8f60f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5261ec9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b916808, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@723877dd, org.springframework.security.web.session.SessionManagementFilter@416d56f2, org.springframework.security.web.access.ExceptionTranslationFilter@1ddc6db2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ceca2ef]
+2019-06-25 16:57:51,937  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 16:57:51,940  INFO DemoApplication:59 - Started DemoApplication in 2.081 seconds (JVM running for 2.768)
+2019-06-25 16:57:55,400  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 16:57:55,409  INFO DispatcherServlet:546 - Completed initialization in 8 ms
+2019-06-25 16:58:01,893  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:58:04,680  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 16:58:04,822  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 19796 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 16:58:04,824  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 16:58:05,722  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 16:58:05,819  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 960 ms
+2019-06-25 16:58:06,205  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 16:58:06,423  INFO UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 1cb5d9c5-bd9a-4298-9736-4dfed7425699
+
+2019-06-25 16:58:06,490  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73fbdf68, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c93b51e, org.springframework.security.web.header.HeaderWriterFilter@481558ce, org.springframework.security.web.csrf.CsrfFilter@634ff56, org.springframework.security.web.authentication.logout.LogoutFilter@3443e476, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f7eee96, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67eec8e1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32f1fafe, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f8e9d06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2abc8034, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c82b5df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@236eccd1, org.springframework.security.web.session.SessionManagementFilter@7f353a0f, org.springframework.security.web.access.ExceptionTranslationFilter@554188ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43cb5f38]
+2019-06-25 16:58:06,553  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 16:58:06,557  INFO DemoApplication:59 - Started DemoApplication in 1.969 seconds (JVM running for 2.617)
+2019-06-25 16:58:10,789  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 16:58:10,797  INFO DispatcherServlet:546 - Completed initialization in 7 ms
+2019-06-25 17:23:09,952  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:23:17,327  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:23:17,461  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 17192 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:23:17,462  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:23:18,461  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:23:18,552  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1058 ms
+2019-06-25 17:23:18,936  WARN AnnotationConfigServletWebServerApplicationContext:554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.bbdog.demo.service.UserService' but was actually of type 'com.bbdog.demo.service.UserServiceImpl'
+2019-06-25 17:23:18,959  INFO ConditionEvaluationReportLoggingListener:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 17:23:18,967 ERROR SpringApplication:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.bbdog.demo.service.UserService' but was actually of type 'com.bbdog.demo.service.UserServiceImpl'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.bbdog.demo.DemoApplication.main(DemoApplication.java:14)
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.bbdog.demo.service.UserService' but was actually of type 'com.bbdog.demo.service.UserServiceImpl'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:392)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:525)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:630)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 17 more
+2019-06-25 17:24:54,713  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:24:54,845  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 2780 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:24:54,845  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:24:55,880  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:24:55,987  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1103 ms
+2019-06-25 17:24:56,391  WARN AnnotationConfigServletWebServerApplicationContext:554 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.bbdog.demo.service.UserService' but was actually of type 'com.bbdog.demo.service.UserServiceImpl'
+2019-06-25 17:24:56,409  INFO ConditionEvaluationReportLoggingListener:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 17:24:56,415 ERROR SpringApplication:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.bbdog.demo.service.UserService' but was actually of type 'com.bbdog.demo.service.UserServiceImpl'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.bbdog.demo.DemoApplication.main(DemoApplication.java:14)
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.bbdog.demo.service.UserService' but was actually of type 'com.bbdog.demo.service.UserServiceImpl'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:392)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:525)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:630)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 17 more
+2019-06-25 17:25:41,013  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:25:41,186  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 15368 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:25:41,188  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:25:42,177  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:25:42,269  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1018 ms
+2019-06-25 17:25:42,819  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:25:42,820  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:25:42,851  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79d82f66, org.springframework.security.web.context.SecurityContextPersistenceFilter@1015a4b9, org.springframework.security.web.header.HeaderWriterFilter@1d901f20, org.springframework.security.web.authentication.logout.LogoutFilter@267cde2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c479fdf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1acb74ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33a55bd8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19b206ee, org.springframework.security.web.session.SessionManagementFilter@6d08b4e6, org.springframework.security.web.access.ExceptionTranslationFilter@2ee48610, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66de00f2]
+2019-06-25 17:25:42,973  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:25:43,195  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:25:43,197  INFO DemoApplication:59 - Started DemoApplication in 2.327 seconds (JVM running for 3.111)
+2019-06-25 17:25:49,979  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 17:25:49,984  INFO DispatcherServlet:546 - Completed initialization in 5 ms
+2019-06-25 17:26:45,994  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:26:48,818  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:26:48,949  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 14296 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:26:48,950  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:26:49,956  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:26:50,051  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1068 ms
+2019-06-25 17:26:50,590  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:26:50,590  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:26:50,619  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a5e167a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bdf, org.springframework.security.web.header.HeaderWriterFilter@3f6bf8aa, org.springframework.security.web.authentication.logout.LogoutFilter@39f5b723, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4debbf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cad79bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50eb4a2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60e06f7d, org.springframework.security.web.session.SessionManagementFilter@13c8ac77, org.springframework.security.web.access.ExceptionTranslationFilter@e784320, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1faf386c]
+2019-06-25 17:26:50,738  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:26:50,955  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:26:50,958  INFO DemoApplication:59 - Started DemoApplication in 2.238 seconds (JVM running for 2.916)
+2019-06-25 17:28:02,964  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:28:07,399  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:28:07,520  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 21304 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:28:07,521  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:28:08,496  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:28:08,582  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1025 ms
+2019-06-25 17:28:09,142  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:28:09,142  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:28:09,181  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@771a7d53, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a9eccc4, org.springframework.security.web.header.HeaderWriterFilter@4cad79bc, org.springframework.security.web.authentication.logout.LogoutFilter@3af58f76, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66a5755, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78422efb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7235f92b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d6d480c, org.springframework.security.web.session.SessionManagementFilter@2c63762b, org.springframework.security.web.access.ExceptionTranslationFilter@4bdf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60e06f7d]
+2019-06-25 17:28:09,348  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:28:09,572  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:28:09,574  INFO DemoApplication:59 - Started DemoApplication in 2.281 seconds (JVM running for 2.939)
+2019-06-25 17:28:13,407  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 17:28:13,413  INFO DispatcherServlet:546 - Completed initialization in 5 ms
+2019-06-25 17:30:21,497  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:30:24,456  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:30:24,585  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 2432 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:30:24,586  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:30:25,640  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:30:25,760  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1141 ms
+2019-06-25 17:30:26,347  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:30:26,347  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:30:26,376  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64942607, org.springframework.security.web.context.SecurityContextPersistenceFilter@d16be4f, org.springframework.security.web.header.HeaderWriterFilter@67536ae0, org.springframework.security.web.authentication.logout.LogoutFilter@3ba3d4b6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68e02f33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17b37e9a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@558b4942, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d48e998, org.springframework.security.web.session.SessionManagementFilter@6413d7e7, org.springframework.security.web.access.ExceptionTranslationFilter@430b2699, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f05c8d6]
+2019-06-25 17:30:26,501  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:30:26,739  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:30:26,741  INFO DemoApplication:59 - Started DemoApplication in 2.393 seconds (JVM running for 3.075)
+2019-06-25 17:30:28,638  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 17:30:28,644  INFO DispatcherServlet:546 - Completed initialization in 6 ms
+2019-06-25 17:30:35,246 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 17:30:35,250  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 17:32:17,910  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:32:17,916  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 17:32:20,859  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:32:20,985  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 15796 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:32:20,985  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:32:21,948  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:32:22,038  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1018 ms
+2019-06-25 17:32:22,564  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:32:22,565  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:32:22,592  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@318c68d5, org.springframework.security.web.context.SecurityContextPersistenceFilter@59c04bee, org.springframework.security.web.header.HeaderWriterFilter@22ad1bae, org.springframework.security.web.authentication.logout.LogoutFilter@65bb6275, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4087c7fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45900b64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@414f87a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cfa83f9, org.springframework.security.web.session.SessionManagementFilter@4116f66a, org.springframework.security.web.access.ExceptionTranslationFilter@3135bf25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7df28f1]
+2019-06-25 17:32:22,710  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:32:22,921  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:32:22,923  INFO DemoApplication:59 - Started DemoApplication in 2.16 seconds (JVM running for 2.864)
+2019-06-25 17:32:30,715  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 17:32:30,721  INFO DispatcherServlet:546 - Completed initialization in 6 ms
+2019-06-25 17:32:48,070 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 17:32:48,074  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 17:36:23,787  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:36:23,799  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 17:36:28,184  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:36:28,316  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 19080 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:36:28,317  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:36:29,312  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:36:29,401  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1050 ms
+2019-06-25 17:36:29,925  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:36:29,926  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:36:29,951  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3965bdf9, org.springframework.security.web.context.SecurityContextPersistenceFilter@31b82e0f, org.springframework.security.web.header.HeaderWriterFilter@2ead6ba4, org.springframework.security.web.authentication.logout.LogoutFilter@36d33f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16ac5d35, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27a09971, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68dd39d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c0e00a8, org.springframework.security.web.session.SessionManagementFilter@31a2a9fa, org.springframework.security.web.access.ExceptionTranslationFilter@3af58f76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f7b6639]
+2019-06-25 17:36:30,068  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:36:30,295  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:36:30,297  INFO DemoApplication:59 - Started DemoApplication in 2.211 seconds (JVM running for 2.909)
+2019-06-25 17:36:33,923  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 17:36:33,931  INFO DispatcherServlet:546 - Completed initialization in 8 ms
+2019-06-25 17:36:50,235 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 17:36:50,240  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 17:39:04,993  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:39:05,001  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 17:39:09,298  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:39:09,437  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 19488 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:39:09,439  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:39:10,354  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:39:10,438  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 958 ms
+2019-06-25 17:39:10,950  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:39:10,951  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:39:10,977  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53ce2392, org.springframework.security.web.context.SecurityContextPersistenceFilter@39f5b723, org.springframework.security.web.header.HeaderWriterFilter@3a3ed300, org.springframework.security.web.authentication.logout.LogoutFilter@999b951, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6274670b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4eaa375c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@152c4495, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32d5279, org.springframework.security.web.session.SessionManagementFilter@1984212d, org.springframework.security.web.access.ExceptionTranslationFilter@69d3cf7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d24420b]
+2019-06-25 17:39:11,090  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:39:11,295  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:39:11,298  INFO DemoApplication:59 - Started DemoApplication in 2.115 seconds (JVM running for 2.812)
+2019-06-25 17:39:18,315  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 17:39:18,320  INFO DispatcherServlet:546 - Completed initialization in 5 ms
+2019-06-25 17:39:21,933 ERROR UsernamePasswordAuthenticationFilter:221 - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at com.bbdog.demo.security.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:29)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 54 more
+2019-06-25 17:40:12,402  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:40:17,221  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:40:17,354  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 1524 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:40:17,355  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:40:18,374  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:40:18,468  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1072 ms
+2019-06-25 17:40:19,064  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:40:19,065  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:40:19,116  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69d3cf7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@558b4942, org.springframework.security.web.header.HeaderWriterFilter@3e1fd62b, org.springframework.security.web.authentication.logout.LogoutFilter@322ba549, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3472947a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30ec7d21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51b77cdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a3ed300, org.springframework.security.web.session.SessionManagementFilter@7112ce6, org.springframework.security.web.access.ExceptionTranslationFilter@4f654cee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@497d4c96]
+2019-06-25 17:40:19,256  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:40:19,482  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:40:19,485  INFO DemoApplication:59 - Started DemoApplication in 2.374 seconds (JVM running for 3.108)
+2019-06-25 17:48:49,009  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:48:51,089  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 17:48:51,215  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 9072 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 17:48:51,215  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 17:48:52,114  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 17:48:52,205  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 954 ms
+2019-06-25 17:48:52,736  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 17:48:52,736  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 17:48:52,763  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e05586b, org.springframework.security.web.context.SecurityContextPersistenceFilter@610d28b8, org.springframework.security.web.header.HeaderWriterFilter@6dd36ab6, org.springframework.security.web.authentication.logout.LogoutFilter@659f226a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@168b4cb0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53c99b09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4997552e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35b17c06, org.springframework.security.web.session.SessionManagementFilter@50a13c2f, org.springframework.security.web.access.ExceptionTranslationFilter@76f881d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23da79eb]
+2019-06-25 17:48:52,875  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 17:48:53,083  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 17:48:53,085  INFO DemoApplication:59 - Started DemoApplication in 2.093 seconds (JVM running for 2.95)
+2019-06-25 17:49:02,212  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 17:49:02,219  INFO DispatcherServlet:546 - Completed initialization in 6 ms
+2019-06-25 17:49:06,545 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 17:49:06,549  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 18:17:03,531  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:17:03,538  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 18:17:06,430  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:17:06,552  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 20792 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:17:06,553  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:17:07,485  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:17:07,569  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 981 ms
+2019-06-25 18:17:08,110  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:17:08,111  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:17:08,144  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b6a0ea9, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ec1963c, org.springframework.security.web.header.HeaderWriterFilter@36e43829, org.springframework.security.web.authentication.logout.LogoutFilter@26ca61bf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3408f695, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7dcb42a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b410308, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dde8976, org.springframework.security.web.session.SessionManagementFilter@152c4495, org.springframework.security.web.access.ExceptionTranslationFilter@46dcbeab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78cfa264]
+2019-06-25 18:17:08,260  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:17:08,478  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:17:08,482  INFO DemoApplication:59 - Started DemoApplication in 2.146 seconds (JVM running for 2.825)
+2019-06-25 18:17:12,960  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 18:17:12,968  INFO DispatcherServlet:546 - Completed initialization in 7 ms
+2019-06-25 18:17:14,729 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 18:17:14,733  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 18:19:55,513  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:19:55,521  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 18:19:59,924  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:20:00,055  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 3860 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:20:00,056  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:20:01,706  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:20:01,803  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1712 ms
+2019-06-25 18:20:02,465  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:20:02,466  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:20:02,497  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a917723, org.springframework.security.web.context.SecurityContextPersistenceFilter@68e02f33, org.springframework.security.web.header.HeaderWriterFilter@78422efb, org.springframework.security.web.authentication.logout.LogoutFilter@31b82e0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e95595b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64942607, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3472947a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e4579c7, org.springframework.security.web.session.SessionManagementFilter@5f05c8d6, org.springframework.security.web.access.ExceptionTranslationFilter@7a9eccc4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d6d480c]
+2019-06-25 18:20:02,632  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:20:02,900  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:20:02,912  INFO DemoApplication:59 - Started DemoApplication in 3.084 seconds (JVM running for 3.803)
+2019-06-25 18:21:40,447  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:21:43,436  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:21:43,572  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 12880 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:21:43,573  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:21:44,542  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:21:44,630  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1024 ms
+2019-06-25 18:21:45,153  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:21:45,153  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:21:45,220  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ddb774f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b410308, org.springframework.security.web.header.HeaderWriterFilter@999b951, org.springframework.security.web.authentication.logout.LogoutFilter@6a5e167a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27443560, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b0bd001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73a0f2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2582b0ef, org.springframework.security.web.session.SessionManagementFilter@65cf4d6d, org.springframework.security.web.access.ExceptionTranslationFilter@80b122b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@294f9d50]
+2019-06-25 18:21:45,349  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:21:45,588  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:21:45,590  INFO DemoApplication:59 - Started DemoApplication in 2.252 seconds (JVM running for 2.967)
+2019-06-25 18:21:51,343  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 18:21:51,349  INFO DispatcherServlet:546 - Completed initialization in 5 ms
+2019-06-25 18:21:53,836 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 18:21:53,840  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 18:27:48,528  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:27:48,544  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 18:27:53,257  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:27:53,375  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 13288 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:27:53,376  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:27:54,346  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:27:54,451  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1037 ms
+2019-06-25 18:27:55,055  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:27:55,055  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:27:55,082  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@80b122b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5416f8db, org.springframework.security.web.header.HeaderWriterFilter@322ba549, org.springframework.security.web.authentication.logout.LogoutFilter@e784320, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60e3c26e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64e1377c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27abb6ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@999b951, org.springframework.security.web.session.SessionManagementFilter@502a4156, org.springframework.security.web.access.ExceptionTranslationFilter@1163a27, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a44cfc0]
+2019-06-25 18:27:55,202  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:27:55,438  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:27:55,441  INFO DemoApplication:59 - Started DemoApplication in 2.28 seconds (JVM running for 3.012)
+2019-06-25 18:28:09,367  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 18:28:09,373  INFO DispatcherServlet:546 - Completed initialization in 6 ms
+2019-06-25 18:28:09,405 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 18:28:09,410  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 18:29:15,311  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:29:15,327  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 18:29:18,564  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:29:18,701  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 5428 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:29:18,702  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:29:19,714  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:29:19,802  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1064 ms
+2019-06-25 18:29:20,342  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:29:20,343  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:29:20,371  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12a470dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b61bf11, org.springframework.security.web.header.HeaderWriterFilter@124dac75, org.springframework.security.web.authentication.logout.LogoutFilter@4f654cee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ceee4b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40247d48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67536ae0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6968bcec, org.springframework.security.web.session.SessionManagementFilter@315105f, org.springframework.security.web.access.ExceptionTranslationFilter@2be21396, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a7e365]
+2019-06-25 18:29:20,489  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:29:20,713  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:29:20,719  INFO DemoApplication:59 - Started DemoApplication in 2.255 seconds (JVM running for 2.977)
+2019-06-25 18:31:25,484  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:31:28,552  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:31:28,685  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 4568 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:31:28,685  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:31:29,769  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:31:29,857  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1134 ms
+2019-06-25 18:31:30,375  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:31:30,376  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:31:30,402  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@889a8a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b6a0ea9, org.springframework.security.web.header.HeaderWriterFilter@78cfa264, org.springframework.security.web.authentication.logout.LogoutFilter@6dd36ab6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@36aab105, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4dde8976, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ddb774f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f29353f, org.springframework.security.web.session.SessionManagementFilter@3408f695, org.springframework.security.web.access.ExceptionTranslationFilter@6cd15072, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34d713a2]
+2019-06-25 18:31:30,517  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:31:30,728  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:31:30,731  INFO DemoApplication:59 - Started DemoApplication in 2.286 seconds (JVM running for 3.011)
+2019-06-25 18:31:34,093  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 18:31:34,103  INFO DispatcherServlet:546 - Completed initialization in 10 ms
+2019-06-25 18:31:36,482 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 18:31:36,486  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 18:31:58,562  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:31:58,574  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 18:32:01,663  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:32:01,808  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 20180 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:32:01,809  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:32:02,766  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:32:02,856  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1013 ms
+2019-06-25 18:32:03,387  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:32:03,387  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:32:03,414  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dde8976, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dcb42a9, org.springframework.security.web.header.HeaderWriterFilter@152c4495, org.springframework.security.web.authentication.logout.LogoutFilter@73a0f2b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b6a0ea9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6af90849, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b0bd001, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4887de2b, org.springframework.security.web.session.SessionManagementFilter@5ec1963c, org.springframework.security.web.access.ExceptionTranslationFilter@36e43829, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3408f695]
+2019-06-25 18:32:03,526  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:32:03,735  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:32:03,738  INFO DemoApplication:59 - Started DemoApplication in 2.173 seconds (JVM running for 2.875)
+2019-06-25 18:32:07,569  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 18:32:07,574  INFO DispatcherServlet:546 - Completed initialization in 5 ms
+2019-06-25 18:32:07,604 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 18:32:07,608  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 18:32:51,358  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:32:51,366  INFO DruidDataSource:1863 - {dataSource-1} closed
+2019-06-25 18:32:55,648  INFO Version:21 - HV000001: Hibernate Validator 6.0.13.Final
+2019-06-25 18:32:55,780  INFO DemoApplication:50 - Starting DemoApplication on DESKTOP-FM9LK77 with PID 2228 (D:\bbgog\com.bbdog\demo\target\classes started by wg103 in D:\bbgog\com.bbdog)
+2019-06-25 18:32:55,782  INFO DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-06-25 18:32:56,780  INFO TomcatWebServer:90 - Tomcat initialized with port(s): 8888 (http)
+2019-06-25 18:32:56,876  INFO ContextLoader:296 - Root WebApplicationContext: initialization completed in 1060 ms
+2019-06-25 18:32:57,426  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2019-06-25 18:32:57,426  INFO DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2019-06-25 18:32:57,453  INFO DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d6d480c, org.springframework.security.web.context.SecurityContextPersistenceFilter@78422efb, org.springframework.security.web.header.HeaderWriterFilter@2c63762b, org.springframework.security.web.authentication.logout.LogoutFilter@2ead6ba4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@771a7d53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f05c8d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7885776b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e95595b, org.springframework.security.web.session.SessionManagementFilter@7a9eccc4, org.springframework.security.web.access.ExceptionTranslationFilter@4cad79bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66a5755]
+2019-06-25 18:32:57,572  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-25 18:32:57,793  INFO TomcatWebServer:204 - Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-25 18:32:57,796  INFO DemoApplication:59 - Started DemoApplication in 2.249 seconds (JVM running for 2.954)
+2019-06-25 18:33:17,395  INFO DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-25 18:33:17,400  INFO DispatcherServlet:546 - Completed initialization in 5 ms
+2019-06-25 18:33:17,431 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
+2019-06-25 18:33:17,435  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-06-25 19:44:56,030  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-25 19:44:56,043  INFO DruidDataSource:1863 - {dataSource-1} closed
