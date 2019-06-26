@@ -2,18 +2,21 @@ package com.bbdog.demo.service;
 
 import com.bbdog.demo.entity.User;
 import com.bbdog.demo.mapper.UserMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
 @Service("userService")
-public class UserServiceImpl implements UserService {
-
-    @Resource
+public class UserServiceImpl {
+    @Autowired
     private UserMapper userMapper;
 
     public User getUserById(Integer id){
         return userMapper.selectByPrimaryKey(id);
+    }
+    public User getUserByLoginName(String userName){
+        return userMapper.getUserByName(userName);
     }
     public boolean addUser(User user){
         boolean result = false;
