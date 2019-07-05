@@ -6,10 +6,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class LoginController {
@@ -21,12 +23,13 @@ public class LoginController {
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
         logger.info("当前登陆用户：" + name);
 
-        return "home.html";
+        return "/home.html";
     }
 
     @RequestMapping("/login")
-    public String showLogin() {
-        return "login.html";
+    public String showLogin(Model model) {
+        model.addAttribute("remember",123);
+        return "login";
     }
 
     @RequestMapping("/admin")
