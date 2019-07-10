@@ -1,0 +1,57 @@
+{
+  "groups": [
+    {
+      "name": "admin",
+      "type": "com.bbdog.demo.properties.Admin",
+      "sourceType": "com.bbdog.demo.properties.Admin"
+    },
+    {
+      "name": "redis",
+      "type": "com.bbdog.demo.properties.RedisConfig",
+      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "admin.password",
+      "type": "java.lang.String",
+      "sourceType": "com.bbdog.demo.properties.Admin"
+    },
+    {
+      "name": "admin.username",
+      "type": "java.lang.String",
+      "sourceType": "com.bbdog.demo.properties.Admin"
+    },
+    {
+      "name": "redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+    },
+    {
+      "name": "redis.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+    },
+    {
+      "name": "redis.max-total",
+      "type": "java.lang.Integer",
+      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+    },
+    {
+      "name": "redis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+    },
+    {
+      "name": "redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+    },
+    {
+      "name": "redis.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+    }
+  ],
+  "hints": []
+}
