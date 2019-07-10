@@ -4,13 +4,14 @@ import com.bbdog.demo.entity.User;
 import com.bbdog.demo.mapper.UserMapper;
 import com.bbdog.demo.properties.Admin;
 import com.bbdog.demo.properties.RedisConfig;
+import com.bbdog.demo.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.web.bind.annotation.Mapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.configurationprocessor.json.JSONObject;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
 @RequestMapping(value = "/test")
 public class TestDBController {
     @Autowired
@@ -18,7 +19,8 @@ public class TestDBController {
     @Autowired
     private Admin admin;
     @Autowired
-    private RedisConfig redisConfig;
+    private RedisUtils redisUtils;
+
 
     @RequestMapping(value = "getUser")
     public User getUser(){
@@ -33,10 +35,11 @@ public class TestDBController {
         user = userMapper.selectByPrimaryKey(1);
         return user;
     }
-    @RequestMapping(value = "/testProperties")
-    public String getAdmin(){
-        System.out.println(redisConfig.toString());
-        return redisConfig.toString();
+
+    @RequestMapping(value = "/getRedis")
+    @ResponseBody
+    public String getRedis()throws Exception{
+        return redisUtils.get("a").toString();
     }
 
 
