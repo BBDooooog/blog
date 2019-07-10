@@ -3,11 +3,8 @@ package com.bbdog.demo.controller;
 import com.bbdog.demo.entity.User;
 import com.bbdog.demo.mapper.UserMapper;
 import com.bbdog.demo.properties.Admin;
-import com.bbdog.demo.properties.RedisConfig;
 import com.bbdog.demo.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,8 +34,8 @@ public class TestDBController {
     }
 
     @RequestMapping(value = "/getRedis")
-    @ResponseBody
-    public String getRedis()throws Exception{
+    public String getRedis(){
+        redisUtils.set("a",1);
         return redisUtils.get("a").toString();
     }
 
