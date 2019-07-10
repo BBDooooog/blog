@@ -566,3 +566,5 @@ Caused by: java.io.FileNotFoundException: class path resource [classPath:/admin.
 2019-07-10 10:20:13,007  INFO DispatcherServlet:546 - Completed initialization in 5 ms
 2019-07-10 10:20:15,380 ERROR DruidDataSource:1087 - testWhileIdle is true, validationQuery not set
 2019-07-10 10:20:15,384  INFO DruidDataSource:947 - {dataSource-1} inited
+2019-07-10 11:28:20,918  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-10 11:28:20,919  INFO DruidDataSource:1863 - {dataSource-1} closed
