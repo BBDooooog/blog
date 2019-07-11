@@ -39,5 +39,12 @@ public class TestDBController {
         return redisUtils.get("a").toString();
     }
 
+    @RequestMapping(value = "/getParam",method = RequestMethod.GET)
+    public String getParam(@RequestParam("name") String id){
+        return id;
+    }
+
+
+
 
 }
