@@ -6,6 +6,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
@@ -58,52 +60,16 @@ public class RedisConfig {
         jedisPoolConfig.setTestWhileIdle(testWhileIdle);
         return jedisPoolConfig;
     }
-//    /**
-//     * 单机版配置
-//     * @Title: JedisConnectionFactory
-//     * @param @param jedisPoolConfig
-//     * @param @return
-//     * @return JedisConnectionFactory
-//     * @autor lpl
-//     * @date 2018年2月24日
-//     * @throws
-//     */
-//    @Bean
-//    public JedisConnectionFactory JedisConnectionFactory(JedisPoolConfig jedisPoolConfig){
-//        JedisConnectionFactory JedisConnectionFactory = new JedisConnectionFactory(jedisPoolConfig);
-//        //连接池
-//        JedisConnectionFactory.setPoolConfig(jedisPoolConfig);
-//        //IP地址
-//        JedisConnectionFactory.setHostName(host);
-//        //端口号
-//        JedisConnectionFactory.setPort(port);
-//        //如果Redis设置有密码
-//        //JedisConnectionFactory.setPassword(password);
-//        //客户端超时时间单位是毫秒
-//        JedisConnectionFactory.setTimeout(timeout);
-//        return JedisConnectionFactory;
-//    }
 
     @Bean
-    public JedisPool getJedisPool(){
-        JedisPoolConfig config = jedisPoolConfig();
-
-        JedisPool jedisPool = null;
-        if (this.password.isEmpty()) {
-            jedisPool = new JedisPool(
-                    config,
-                    host,
-                    port,
-                    this.timeout);
-        } else {
-            jedisPool = new JedisPool(
-                    config,
-                    host,
-                    port,
-                    this.timeout,
-                    this.password);
-        }
-        return jedisPool;
+    public RedisConnectionFactory redisConnectionFactory(JedisPoolConfig jedisPoolConfig){
+        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration();
+        redisStandaloneConfiguration.setHostName(host);
+        redisStandaloneConfiguration.setPort(port);
+        JedisClientConfiguration.JedisPoolingClientConfigurationBuilder jpcf = (JedisClientConfiguration.JedisPoolingClientConfigurationBuilder) JedisClientConfiguration.builder();
+        jpcf.poolConfig(jedisPoolConfig);
+        JedisClientConfiguration jedisClientConfiguration = jpcf.build();
+        return new JedisConnectionFactory(redisStandaloneConfiguration, jedisClientConfiguration);
     }
 
     /**
