@@ -12,6 +12,7 @@
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo</name>
+    <packaging>war</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -30,6 +31,15 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!--不使用内嵌式tomcat-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
