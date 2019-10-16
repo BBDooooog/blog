@@ -59,28 +59,51 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/help/**").permitAll()
-                .anyRequest().authenticated()
-                .and()
+        baseConfigure(http);
+        loginConfigure(http);
+
+
+    }
+
+    private void baseConfigure(HttpSecurity http)throws Exception{
+        http
             .formLogin()
                 .loginPage("/login")
+//                .defaultSuccessUrl("/index.do")
                 .successForwardUrl("/index.do")
                 .permitAll()
                 .and()
             .logout()
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("/index.do")
+                .logoutSuccessUrl("/login")
                 .permitAll()
+                .deleteCookies("JESSIONID")
                 .and()
-            /*.rememberMe()
-                .tokenRepository(persistentTokenRepository())
-                .tokenValiditySeconds(60)
-                .userDetailsService(userDetailsService)
-                .and()*/
+                /*.rememberMe()
+                    .tokenRepository(persistentTokenRepository())
+                    .tokenValiditySeconds(60)
+                    .userDetailsService(userDetailsService)
+                    .and()*/
             .csrf()
-                .disable();
+                .disable()
+            .sessionManagement()
+                .invalidSessionUrl("/login");
+        //单用户登录，如果有一个登录了，同一个用户在其他地方登录将前一个剔除下线
+        //http.sessionManagement().maximumSessions(1).expiredSessionStrategy(expiredSessionStrategy());
+        //单用户登录，如果有一个登录了，同一个用户在其他地方不能登录
+//        http.sessionManagement().maximumSessions(1).maxSessionsPreventsLogin(true);
+        //退出删除cookie
+//        http.logout().deleteCookies("JESSIONID");
 
+    }
+    private void loginConfigure(HttpSecurity http)throws Exception{
+        http.authorizeRequests()
+                .antMatchers(
+                        "/doRregister",
+                        "/register"
+                        ).permitAll()
+                .anyRequest().authenticated()
+                .and();
     }
 
     @Override

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/test")
+//@RequestMapping(value = "/test")
 public class TestDBController {
     @Autowired
     private UserMapper userMapper;
@@ -22,14 +22,14 @@ public class TestDBController {
     private RedisUtils redisUtils;
 
 
-    @RequestMapping(value = "getUser")
+    @RequestMapping(value = "/getuser")
     public User getUser(){
         User user = new User();
         user.setUserId(0);
         return user;
     }
 
-    @RequestMapping(value = "getUserByDB")
+    @RequestMapping(value = "/getdbuser")
     public User getUserByDB(){
         User user = new User();
         user = userMapper.selectByPrimaryKey(1);
