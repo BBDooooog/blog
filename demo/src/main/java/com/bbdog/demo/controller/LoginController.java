@@ -27,7 +27,7 @@ public class LoginController {
     @RequestMapping("/login")
     public String showLogin(Model model) {
         model.addAttribute("remember",123);
-        return "login";
+        return "/login/login";
     }
 
     @RequestMapping("/admin")

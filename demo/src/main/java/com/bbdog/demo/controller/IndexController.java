@@ -5,13 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/index")
 public class IndexController {
 
+    @RequestMapping(value = "/index.do")
+    public String index(){
 
-    public String login(){
-
-        return "";
+        return "/index/index";
     }
 
 
