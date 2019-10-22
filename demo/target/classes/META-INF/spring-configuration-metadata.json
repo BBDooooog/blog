@@ -2,95 +2,95 @@
   "groups": [
     {
       "name": "admin",
-      "type": "com.bbdog.demo.properties.Admin",
-      "sourceType": "com.bbdog.demo.properties.Admin"
+      "type": "com.bbdog.demo.system.properties.Admin",
+      "sourceType": "com.bbdog.demo.system.properties.Admin"
     },
     {
       "name": "redis",
-      "type": "com.bbdog.demo.properties.RedisConfig",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "type": "com.bbdog.demo.system.properties.RedisConfig",
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     }
   ],
   "properties": [
     {
       "name": "admin.password",
       "type": "java.lang.String",
-      "sourceType": "com.bbdog.demo.properties.Admin"
+      "sourceType": "com.bbdog.demo.system.properties.Admin"
     },
     {
       "name": "admin.username",
       "type": "java.lang.String",
-      "sourceType": "com.bbdog.demo.properties.Admin"
+      "sourceType": "com.bbdog.demo.system.properties.Admin"
     },
     {
       "name": "redis.block-when-exhausted",
       "type": "java.lang.Boolean",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.host",
       "type": "java.lang.String",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.max-idle",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.max-total",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.max-wait-millis",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.min-evictable-idle-time-millis",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.num-tests-per-eviction-run",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.password",
       "type": "java.lang.String",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.port",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.soft-min-evictable-idle-time-millis",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.test-on-borrow",
       "type": "java.lang.Boolean",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.test-while-idle",
       "type": "java.lang.Boolean",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.time-between-eviction-runs-millis",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     },
     {
       "name": "redis.timeout",
       "type": "java.lang.Integer",
-      "sourceType": "com.bbdog.demo.properties.RedisConfig"
+      "sourceType": "com.bbdog.demo.system.properties.RedisConfig"
     }
   ],
   "hints": []

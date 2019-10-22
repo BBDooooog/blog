@@ -1,4 +1,4 @@
-package com.bbdog.demo.service;
+package com.bbdog.demo.system.service;
 
 import com.bbdog.demo.entity.UserRole;
 import com.bbdog.demo.mapper.UserRoleMapper;

@@ -1,4 +1,4 @@
-package com.bbdog.demo.druid;
+package com.bbdog.demo.system.druid;
 
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;

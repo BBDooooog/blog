@@ -1,20 +1,18 @@
-package com.bbdog.demo.security;
+package com.bbdog.demo.system.security;
 
 import com.bbdog.demo.entity.Role;
 import com.bbdog.demo.entity.User;
 import com.bbdog.demo.entity.UserRole;
-import com.bbdog.demo.service.RoleService;
-import com.bbdog.demo.service.UserRoleService;
-import com.bbdog.demo.service.UserServiceImpl;
+import com.bbdog.demo.system.service.RoleService;
+import com.bbdog.demo.system.service.UserRoleService;
+import com.bbdog.demo.system.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;

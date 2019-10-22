@@ -1,11 +1,9 @@
-package com.bbdog.demo.service;
+package com.bbdog.demo.system.service;
 
 import com.bbdog.demo.entity.User;
 import com.bbdog.demo.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 @Service("userService")
 public class UserServiceImpl {

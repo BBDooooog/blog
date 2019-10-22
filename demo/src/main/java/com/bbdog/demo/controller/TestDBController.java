@@ -2,14 +2,10 @@ package com.bbdog.demo.controller;
 
 import com.bbdog.demo.entity.User;
 import com.bbdog.demo.mapper.UserMapper;
-import com.bbdog.demo.properties.Admin;
+import com.bbdog.demo.system.properties.Admin;
 import com.bbdog.demo.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 @RestController
 public class TestDBController {
@@ -20,13 +16,6 @@ public class TestDBController {
     @Autowired
     private RedisUtils redisUtils;
 
-
-    @RequestMapping(value = "/getuser")
-    public User getUser(){
-        User user = new User();
-        user.setUserId(0);
-        return user;
-    }
 
     @RequestMapping(value = "/getdbuser")
     public User getUserByDB(){
@@ -41,29 +30,6 @@ public class TestDBController {
         return redisUtils.get("a").toString();
     }
 
-    @RequestMapping(value = "/properties")
-    public void getAdmin(){
-        System.out.println(new Admin().toString());
-    }
-
-    @RequestMapping("/testRequestParam")
-    public void requestParam(User user ,@RequestParam Integer userId,
-                            @RequestParam String userName,@RequestParam String password,@RequestParam String phone){
-        System.out.println("userId=" + userId + "userName=" + userName + "password=" + password + "phone="+ phone);
-        System.out.println(user.toString());
-    }
-
-    @RequestMapping("/testRequestBody")
-    public void requestBody(@RequestBody List<User> userList){
-        for (User user :userList){
-            System.out.println(user.toString());
-        }
-    }
-
-    @RequestMapping(value = "/getParam",method = RequestMethod.GET)
-    public String getParam(@RequestParam("name") String id){
-        return id;
-    }
 
 
 

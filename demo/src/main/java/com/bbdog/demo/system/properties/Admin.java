@@ -1,4 +1,4 @@
-package com.bbdog.demo.properties;
+package com.bbdog.demo.system.properties;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
-@PropertySource(value = {"classpath:/admin.properties"})
+@PropertySource(value = {"classpath:/config/admin.properties"})
 @ConfigurationProperties(prefix = "admin")
 public class Admin {
     @Value(value = "${admin.username}")

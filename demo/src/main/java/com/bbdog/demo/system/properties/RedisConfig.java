@@ -1,4 +1,4 @@
-package com.bbdog.demo.properties;
+package com.bbdog.demo.system.properties;
 
 import com.bbdog.demo.utils.RedisUtils;
 import lombok.Data;
@@ -13,7 +13,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
-import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 @PropertySource(value = "classpath:config/redis.properties")

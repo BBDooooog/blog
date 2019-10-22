@@ -1,4 +1,4 @@
-package com.bbdog.demo.controller;
+package com.bbdog.demo.index.controller;
 
 import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.stereotype.Controller;
@@ -15,6 +15,7 @@ public class IndexController {
 
         return "/index/index";
     }
+
 
 
 
