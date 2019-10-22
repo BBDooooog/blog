@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
-//@RequestMapping(value = "/test")
 public class TestDBController {
     @Autowired
     private UserMapper userMapper;
@@ -40,6 +39,11 @@ public class TestDBController {
     public String getRedis(){
         redisUtils.set("a",1);
         return redisUtils.get("a").toString();
+    }
+
+    @RequestMapping(value = "/properties")
+    public void getAdmin(){
+        System.out.println(new Admin().toString());
     }
 
     @RequestMapping("/testRequestParam")
