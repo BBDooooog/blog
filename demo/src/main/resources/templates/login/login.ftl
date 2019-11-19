@@ -36,6 +36,11 @@
         color: white;
     }
 </style>
+<script type="application/javascript">
+    function doRregister(){
+        window.location.href = "/doRregister";
+    }
+</script>
 <body>
 <div style="width: 100%;">
     <div class="login">
@@ -45,6 +50,7 @@
             <div><input type="password" name="password"  placeholder="密码"></div>
             <#--<input type="checkbox" name="remember-me"/>自动登录-->
             <div class="btn"><button type="submit">立即登陆</button></div>
+            <div class="btn"><button type="button" onclick="doRregister()">注册</button></div>
         </form>
     </div>
 </div>

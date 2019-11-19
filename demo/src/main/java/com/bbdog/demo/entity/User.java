@@ -4,11 +4,10 @@ import lombok.Data;
 
 import java.io.Serializable;
 @Data
-public class User implements Serializable {
+public class User extends IdEntity implements Serializable {
     private static final long serialVersionUID = -1633999234150663177L;
 
-    private Integer userId;
-    private String userName;
+    private String name;
     private String password;
     private String phone;
 }
