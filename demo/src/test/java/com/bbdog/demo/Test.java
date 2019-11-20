@@ -1,5 +1,6 @@
 package com.bbdog.demo;
 
+import com.bbdog.demo.entity.Message;
 import com.bbdog.demo.entity.User;
 
 import java.util.*;
@@ -10,10 +11,10 @@ public class Test {
 
 
     public static void main(String[] args) throws Exception{
-        Object obj = new User();
-        Object object = new User();
-        System.out.println(obj == object);
-        System.out.println(obj.equals(object));
+        Class clazz = Message.class;
+        System.out.println(clazz.getName());
+        System.out.println(clazz.getPackage().getName());
+        System.out.println(clazz.getSimpleName());
         /*User user1 = new User();
         User user2 = new User();
         System.out.println("user1 HashCode is:"+user1.hashCode());

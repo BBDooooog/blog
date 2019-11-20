@@ -4,9 +4,9 @@ import lombok.Data;
 
 import java.io.Serializable;
 @Data
-public class UserRole implements Serializable {
+public class UserRole extends IdEntity implements Serializable {
     private static final long serialVersionUID = -6899729431209580408L;
 
-    private Integer userId;
-    private Integer roleId;
+    private Long userId;
+    private Long roleId;
 }

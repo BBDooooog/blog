@@ -7,7 +7,7 @@ import java.util.Date;
 
 
 @Data
-public class PersistentLogins implements Serializable {
+public class PersistentLogins extends IdEntity implements Serializable {
     private static final long serialVersionUID = -403791176197381337L;
     private String series;
 

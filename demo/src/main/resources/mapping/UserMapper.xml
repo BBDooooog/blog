@@ -1,88 +1,125 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.bbdog.demo.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.bbdog.demo.entity.User" >
-    <id column="user_id" property="userId" jdbcType="INTEGER" />
-    <result column="user_name" property="userName" jdbcType="VARCHAR" />
-    <result column="password" property="password" jdbcType="VARCHAR" />
-    <result column="phone" property="phone" jdbcType="VARCHAR" />
-  </resultMap>
-  <sql id="Base_Column_List" >
-    user_id, user_name, password, phone
-  </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
-    <include refid="Base_Column_List" />
-    from sys_user
-    where user_id = #{userId,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from sys_user
-    where user_id = #{userId,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.bbdog.demo.entity.User" >
-    insert into sys_user (user_id, user_name, password,
-      phone)
-    values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=VARCHAR})
-  </insert>
-  <insert id="insertSelective" parameterType="com.bbdog.demo.entity.User" >
-    insert into sys_user
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="userId != null" >
-        user_id,
-      </if>
-      <if test="userName != null" >
-        user_name,
-      </if>
-      <if test="password != null" >
-        password,
-      </if>
-      <if test="phone != null" >
-        phone,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="userId != null" >
-        #{userId,jdbcType=INTEGER},
-      </if>
-      <if test="userName != null" >
-        #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null" >
-        #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="phone != null" >
-        #{phone,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.bbdog.demo.entity.User" >
-    update sys_user
-    <set >
-      <if test="userName != null" >
-        user_name = #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null" >
-        password = #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="phone != null" >
-        phone = #{phone,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where user_id = #{userId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.bbdog.demo.entity.User" >
-    update sys_user
-    set user_name = #{userName,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
-      phone = #{phone,jdbcType=VARCHAR}
-    where user_id = #{userId,jdbcType=INTEGER}
-  </update>
-  <select id="getUserByName" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select
-    <include refid="Base_Column_List" />
-    from sys_user
-    where user_name = #{userName,jdbcType=VARCHAR}
-  </select>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bbdog.demo.mapper.UserMapper">
+<!--<cache eviction="LRU" type="org.mybatis.caches.memcached.MemcachedCache"/>-->
+<resultMap id="UserMap" type="com.bbdog.demo.entity.User">
+	<result column="LOGIN_NAME" jdbcType="VARCHAR" property="loginName"/>
+	<result column="NAME" jdbcType="VARCHAR" property="name"/>
+	<result column="PASSWORD" jdbcType="VARCHAR" property="password"/>
+	<result column="PHONE" jdbcType="VARCHAR" property="phone"/>
+	<result column="ID" jdbcType="DECIMAL" property="id"/>
+	<result column="VERSION" jdbcType="DECIMAL" property="version"/>
+	<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+	<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime"/>
+</resultMap>
+<sql id="Base_Column_List">
+	LOGIN_NAME,NAME,PASSWORD,PHONE,ID,VERSION,CREATE_TIME,UPDATE_TIME
+</sql>
+<sql id="su_Base_Column_List">
+	su.LOGIN_NAME,su.NAME,su.PASSWORD,su.PHONE,su.ID,su.VERSION,su.CREATE_TIME,su.UPDATE_TIME
+</sql>
+<select id="get" parameterType="long" resultMap="UserMap">
+	select
+		<include refid="Base_Column_List"/>
+	from sys_user su
+	where ID = #{id,jdbcType=DECIMAL}
+</select>
+<delete id="delete" parameterType="long">
+	delete
+	from sys_user su
+	where ID = #{id,jdbcType=DECIMAL}
+</delete>
+<insert id="insert" parameterType="com.bbdog.demo.entity.User">
+	insert into sys_user(
+		<include refid="Base_Column_List"/>
+	) values (
+	#{loginName,jdbcType=VARCHAR},
+	#{name,jdbcType=VARCHAR},
+	#{password,jdbcType=VARCHAR},
+	#{phone,jdbcType=VARCHAR},
+	#{id,jdbcType=DECIMAL},
+	#{version,jdbcType=DECIMAL},
+	#{createTime,jdbcType=TIMESTAMP},
+	#{updateTime,jdbcType=TIMESTAMP}
+	)
+</insert>
+<update id="update" parameterType="com.bbdog.demo.entity.User">
+	update sys_user su
+	<set>
+		VERSION = VERSION + 1
+		<if test="loginName != null">
+		,LOGIN_NAME = #{loginName,jdbcType=VARCHAR}
+		</if>
+		<if test="name != null">
+		,NAME = #{name,jdbcType=VARCHAR}
+		</if>
+		<if test="password != null">
+		,PASSWORD = #{password,jdbcType=VARCHAR}
+		</if>
+		<if test="phone != null">
+		,PHONE = #{phone,jdbcType=VARCHAR}
+		</if>
+		<if test="createTime != null">
+		,CREATE_TIME = #{createTime,jdbcType=TIMESTAMP}
+		</if>
+		<if test="updateTime != null">
+		,UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP}
+		</if>
+	</set>
+	where ID = #{id,jdbcType=DECIMAL} and version = #{version,jdbcType=DECIMAL}
+</update>
+<select id="findListForExample" parameterType="com.bbdog.demo.entity.User" resultMap="UserMap">
+	select
+	<include refid="su_Base_Column_List"/>
+	from sys_user su
+	<include refid="common_query_condition"/>
+</select>
+<select id="findListForMap" parameterType="map" resultMap="UserMap">
+	select
+	<include refid="su_Base_Column_List"/>
+	from sys_user su
+	<include refid="common_query_condition"/>
+</select>
+<sql id="common_query_condition">
+	<where>
+		<if test="loginName != null">
+		AND su.LOGIN_NAME LIKE CONCAT('%',#{loginName},'%')
+		</if>
+		<if test="name != null">
+		AND su.NAME LIKE CONCAT('%',#{name},'%')
+		</if>
+		<if test="password != null">
+		AND su.PASSWORD LIKE CONCAT('%',#{password},'%')
+		</if>
+		<if test="phone != null">
+		AND su.PHONE LIKE CONCAT('%',#{phone},'%')
+		</if>
+		<if test="id != null">
+		AND su.ID = #{id}
+		</if>
+		<if test="version != null">
+		AND su.VERSION = #{version}
+		</if>
+		<if test="createTimeBegin != null">
+		<![CDATA[AND su.CREATE_TIME >= STR_TO_DATE(#{createTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="createTimeEnd != null">
+		<![CDATA[AND su.CREATE_TIME <= STR_TO_DATE(#{createTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeBegin != null">
+		<![CDATA[AND su.UPDATE_TIME >= STR_TO_DATE(#{updateTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeEnd != null">
+		<![CDATA[AND su.UPDATE_TIME <= STR_TO_DATE(#{updateTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+	</where>
+</sql>
+	<select id="getUserByName" parameterType="string" resultMap="UserMap">
+		select
+		<include refid="Base_Column_List"/>
+		from
+			sys_user su
+		where
+			su.LOGIN_NAME = #{loginName,jdbcType=VARCHAR}
+	</select>
 </mapper>

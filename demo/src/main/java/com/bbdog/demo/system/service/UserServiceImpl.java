@@ -1,25 +1,28 @@
 package com.bbdog.demo.system.service;
 
+import com.bbdog.demo.dao.UserDao;
 import com.bbdog.demo.entity.User;
 import com.bbdog.demo.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 @Service("userService")
 public class UserServiceImpl {
     @Autowired
-    private UserMapper userMapper;
+    private UserDao userDao;
 
-    public User getUserById(Integer id){
-        return userMapper.selectByPrimaryKey(id);
+    public User getUserById(Long id){
+        return userDao.get(id);
     }
     public User getUserByLoginName(String userName){
-        return userMapper.getUserByName(userName);
+        return userDao.getUserByName(userName);
     }
     public boolean addUser(User user){
         boolean result = false;
         try{
-            userMapper.insertSelective(user);
+            userDao.insert(user);
             result = true;
         }catch (Exception e){
             e.printStackTrace();

@@ -4,12 +4,8 @@ import com.bbdog.demo.entity.UserRole;
 
 import java.util.List;
 
-public interface UserRoleMapper {
-    int deleteByPrimaryKey(UserRole key);
+public interface UserRoleMapper extends BaseMapper<UserRole> {
 
-    int insert(UserRole record);
 
-    int insertSelective(UserRole record);
-
-    List<UserRole> listByUserId(Integer userId);
+    List<UserRole> listUserRoleByUserId(Long userId);
 }
