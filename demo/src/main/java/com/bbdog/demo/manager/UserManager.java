@@ -12,6 +12,10 @@ public class UserManager {
     @Autowired
     private UserDao userDao;
 
+    public User getUser(boolean useCache,Long userId){
+        return userDao.get(userId);
+    }
+
     public User getUserByLoginName(String loginName){
         if (StringUtils.isBlank(loginName)){
             return null;

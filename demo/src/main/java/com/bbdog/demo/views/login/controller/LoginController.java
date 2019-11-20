@@ -1,18 +1,14 @@
-package com.bbdog.demo.login.controller;
+package com.bbdog.demo.views.login.controller;
 
 
-import com.bbdog.demo.entity.User;
-import com.bbdog.demo.login.vo.UserVo;
+import com.bbdog.demo.views.login.vo.UserVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -31,7 +27,6 @@ public class LoginController {
 
     @RequestMapping("/login")
     public String showLogin(Model model) {
-        model.addAttribute("remember",123);
         return "/login/login";
     }
 

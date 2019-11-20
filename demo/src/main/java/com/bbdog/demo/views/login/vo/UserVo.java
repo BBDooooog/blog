@@ -1,4 +1,4 @@
-package com.bbdog.demo.login.vo;
+package com.bbdog.demo.views.login.vo;
 
 import lombok.Data;
 import lombok.ToString;
