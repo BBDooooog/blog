@@ -1,5 +1,7 @@
 package com.bbdog.demo.system.security;
 
+import com.bbdog.demo.system.security.handler.MyAuthenticationFailHander;
+import com.bbdog.demo.system.security.handler.MyAuthenticationSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +25,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private UserDetailsServiceImpl userDetailsService;
     @Autowired
     private DataSource dataSource;
+    @Autowired
+    private MyAuthenticationFailHander failHander;
+    @Autowired
+    private MyAuthenticationSuccessHandler successHandler;
 //    @Value("${app.name}")
 //    private String name;
 
@@ -66,6 +72,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginPage("/login")
 //                .defaultSuccessUrl("/index.do")
                 .successForwardUrl("/index.do")
+                .successHandler(successHandler)
+//                .failureHandler(failHander)
                 .permitAll()
                 .and()
             .logout()
