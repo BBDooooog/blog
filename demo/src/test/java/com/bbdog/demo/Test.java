@@ -9,20 +9,16 @@ public class Test {
 
 
 
-
     public static void main(String[] args) throws Exception{
-        Class clazz = Message.class;
-        System.out.println(clazz.getName());
-        System.out.println(clazz.getPackage().getName());
-        System.out.println(clazz.getSimpleName());
-        /*User user1 = new User();
-        User user2 = new User();
-        System.out.println("user1 HashCode is:"+user1.hashCode());
-        System.out.println("user2 HashCode is:"+user2.hashCode());
-        System.out.println("user1 identityHashCode is:"+System.identityHashCode(user1));
-        System.out.println("user2 identityHashCode is:"+System.identityHashCode(user2));
-        System.out.println("user1 == user2 ?"+ (user1 == user2));
-        System.out.println("user1.equals(user2)?"+user1.equals(user2));*/
+        for (Weekday day:Weekday.values()){
+            System.out.println(day.toString());
+        }
+
+        Class<Weekday> clz = Weekday.class;
+        for (Weekday day:clz.getEnumConstants()){
+            System.out.println(day.toString());
+        }
+        Weekday weekday = Weekday.MON;
 
     }
     private static void isRandomAccessSupported(List list) {

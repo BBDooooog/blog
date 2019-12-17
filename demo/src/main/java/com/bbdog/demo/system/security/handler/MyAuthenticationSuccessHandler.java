@@ -16,9 +16,9 @@ import java.util.Date;
 @Component
 public class MyAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 
-    public MyAuthenticationSuccessHandler(){
-        setAlwaysUseDefaultTargetUrl(true);
-    }
+//    public MyAuthenticationSuccessHandler(){
+//        setAlwaysUseDefaultTargetUrl(true);
+//    }
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
