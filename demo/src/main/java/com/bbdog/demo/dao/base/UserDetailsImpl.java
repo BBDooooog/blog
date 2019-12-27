@@ -12,15 +12,15 @@ import java.util.Collection;
 public class UserDetailsImpl extends org.springframework.security.core.userdetails.User {
     private static final long serialVersionUID = 3244770350501840299L;
 
-    private long id;
+    private long userId;
 
     public UserDetailsImpl(IUser user, Collection<? extends GrantedAuthority> authorities) {
         super(user.getLoginName(), user.getPassword(), true, true, true, true, authorities);
-        this.id = user.getId();
+        this.userId = user.getId();
     }
 
     public long getUserId() {
-        return id;
+        return userId;
     }
 
 
