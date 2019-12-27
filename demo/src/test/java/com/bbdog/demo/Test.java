@@ -10,15 +10,7 @@ public class Test {
 
 
     public static void main(String[] args) throws Exception{
-        for (Weekday day:Weekday.values()){
-            System.out.println(day.toString());
-        }
-
-        Class<Weekday> clz = Weekday.class;
-        for (Weekday day:clz.getEnumConstants()){
-            System.out.println(day.toString());
-        }
-        Weekday weekday = Weekday.MON;
+            System.out.println(Integer.toBinaryString('中'));
 
     }
     private static void isRandomAccessSupported(List list) {

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bbdog.demo.mapper.PersistentLoginsMapper">
+<!--<cache eviction="LRU" type="org.mybatis.caches.memcached.MemcachedCache"/>-->
+<resultMap id="PersistentLoginsMap" type="com.bbdog.demo.entity.PersistentLogins">
+	<result column="SERIES" jdbcType="VARCHAR" property="series"/>
+	<result column="USERNAME" jdbcType="VARCHAR" property="username"/>
+	<result column="TOKEN" jdbcType="VARCHAR" property="token"/>
+	<result column="LAST_USED" jdbcType="TIMESTAMP" property="lastUsed"/>
+	<result column="ID" jdbcType="DECIMAL" property="id"/>
+	<result column="VERSION" jdbcType="DECIMAL" property="version"/>
+	<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+	<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime"/>
+</resultMap>
+<sql id="Base_Column_List">
+	SERIES,USERNAME,TOKEN,LAST_USED,ID,VERSION,CREATE_TIME,UPDATE_TIME
+</sql>
+<sql id="pl_Base_Column_List">
+	pl.SERIES,pl.USERNAME,pl.TOKEN,pl.LAST_USED,pl.ID,pl.VERSION,pl.CREATE_TIME,pl.UPDATE_TIME
+</sql>
+<select id="get" parameterType="long" resultMap="PersistentLoginsMap">
+	select
+		<include refid="Base_Column_List"/>
+	from PERSISTENT_LOGINS pl
+	where ID = #{id,jdbcType=DECIMAL}
+</select>
+<delete id="delete" parameterType="long">
+	delete
+	from persistent_logins pl
+	where ID = #{id,jdbcType=DECIMAL}
+</delete>
+<insert id="insert" parameterType="com.bbdog.demo.entity.PersistentLogins">
+	insert into persistent_logins(
+		<include refid="Base_Column_List"/>
+	) values (
+	#{series,jdbcType=VARCHAR},
+	#{username,jdbcType=VARCHAR},
+	#{token,jdbcType=VARCHAR},
+	#{lastUsed,jdbcType=TIMESTAMP},
+	#{id,jdbcType=DECIMAL},
+	#{version,jdbcType=DECIMAL},
+	#{createTime,jdbcType=TIMESTAMP},
+	#{updateTime,jdbcType=TIMESTAMP}
+	)
+</insert>
+<update id="update" parameterType="com.bbdog.demo.entity.PersistentLogins">
+	update persistent_logins pl
+	<set>
+		VERSION = VERSION + 1
+		<if test="series != null">
+		,SERIES = #{series,jdbcType=VARCHAR}
+		</if>
+		<if test="username != null">
+		,USERNAME = #{username,jdbcType=VARCHAR}
+		</if>
+		<if test="token != null">
+		,TOKEN = #{token,jdbcType=VARCHAR}
+		</if>
+		<if test="lastUsed != null">
+		,LAST_USED = #{lastUsed,jdbcType=TIMESTAMP}
+		</if>
+		<if test="createTime != null">
+		,CREATE_TIME = #{createTime,jdbcType=TIMESTAMP}
+		</if>
+		<if test="updateTime != null">
+		,UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP}
+		</if>
+	</set>
+	where ID = #{id,jdbcType=DECIMAL} and version = #{version,jdbcType=DECIMAL}
+</update>
+<select id="findListForExample" parameterType="com.bbdog.demo.entity.PersistentLogins" resultMap="PersistentLoginsMap">
+	select
+	<include refid="pl_Base_Column_List"/>
+	from persistent_logins pl
+	<include refid="common_query_condition"/>
+</select>
+<select id="findListForMap" parameterType="map" resultMap="PersistentLoginsMap">
+	select
+	<include refid="pl_Base_Column_List"/>
+	from persistent_logins pl
+	<include refid="common_query_condition"/>
+</select>
+<sql id="common_query_condition">
+	<where>
+		<if test="series != null">
+		AND pl.SERIES LIKE CONCAT('%',#{series},'%')
+		</if>
+		<if test="username != null">
+		AND pl.USERNAME LIKE CONCAT('%',#{username},'%')
+		</if>
+		<if test="token != null">
+		AND pl.TOKEN LIKE CONCAT('%',#{token},'%')
+		</if>
+		<if test="lastUsedBegin != null">
+		<![CDATA[AND pl.LAST_USED >= STR_TO_DATE(#{lastUsedBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="lastUsedEnd != null">
+		<![CDATA[AND pl.LAST_USED <= STR_TO_DATE(#{lastUsedEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="id != null">
+		AND pl.ID = #{id}
+		</if>
+		<if test="version != null">
+		AND pl.VERSION = #{version}
+		</if>
+		<if test="createTimeBegin != null">
+		<![CDATA[AND pl.CREATE_TIME >= STR_TO_DATE(#{createTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="createTimeEnd != null">
+		<![CDATA[AND pl.CREATE_TIME <= STR_TO_DATE(#{createTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeBegin != null">
+		<![CDATA[AND pl.UPDATE_TIME >= STR_TO_DATE(#{updateTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeEnd != null">
+		<![CDATA[AND pl.UPDATE_TIME <= STR_TO_DATE(#{updateTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+	</where>
+</sql>
+</mapper>

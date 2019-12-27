@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bbdog.demo.mapper.MessageMapper">
+<!--<cache eviction="LRU" type="org.mybatis.caches.memcached.MemcachedCache"/>-->
+<resultMap id="MessageMap" type="com.bbdog.demo.entity.Message">
+	<result column="SENDER_ID" jdbcType="DECIMAL" property="senderId"/>
+	<result column="RECEIVER_ID" jdbcType="DECIMAL" property="receiverId"/>
+	<result column="CONTENT" jdbcType="VARCHAR" property="content"/>
+	<result column="TITLE" jdbcType="VARCHAR" property="title"/>
+	<result column="TYPE" jdbcType="DECIMAL" property="type"/>
+	<result column="ID" jdbcType="DECIMAL" property="id"/>
+	<result column="VERSION" jdbcType="DECIMAL" property="version"/>
+	<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+	<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime"/>
+</resultMap>
+<sql id="Base_Column_List">
+	SENDER_ID,RECEIVER_ID,CONTENT,TITLE,TYPE,ID,VERSION,CREATE_TIME,UPDATE_TIME
+</sql>
+<sql id="m_Base_Column_List">
+	m.SENDER_ID,m.RECEIVER_ID,m.CONTENT,m.TITLE,m.TYPE,m.ID,m.VERSION,m.CREATE_TIME,m.UPDATE_TIME
+</sql>
+<select id="get" parameterType="long" resultMap="MessageMap">
+	select
+		<include refid="Base_Column_List"/>
+	from message m
+	where ID = #{id,jdbcType=DECIMAL}
+</select>
+<delete id="delete" parameterType="long">
+	delete
+	from message m
+	where ID = #{id,jdbcType=DECIMAL}
+</delete>
+<insert id="insert" parameterType="com.bbdog.demo.entity.Message">
+	insert into message(
+		<include refid="Base_Column_List"/>
+	) values (
+	#{senderId,jdbcType=DECIMAL},
+	#{receiverId,jdbcType=DECIMAL},
+	#{content,jdbcType=VARCHAR},
+	#{title,jdbcType=VARCHAR},
+	#{type,jdbcType=DECIMAL},
+	#{id,jdbcType=DECIMAL},
+	#{version,jdbcType=DECIMAL},
+	#{createTime,jdbcType=TIMESTAMP},
+	#{updateTime,jdbcType=TIMESTAMP}
+	)
+</insert>
+<update id="update" parameterType="com.bbdog.demo.entity.Message">
+	update message m
+	<set>
+		VERSION = VERSION + 1
+		<if test="senderId != null">
+		,SENDER_ID = #{senderId,jdbcType=DECIMAL}
+		</if>
+		<if test="receiverId != null">
+		,RECEIVER_ID = #{receiverId,jdbcType=DECIMAL}
+		</if>
+		<if test="content != null">
+		,CONTENT = #{content,jdbcType=VARCHAR}
+		</if>
+		<if test="title != null">
+		,TITLE = #{title,jdbcType=VARCHAR}
+		</if>
+		<if test="type != null">
+		,TYPE = #{type,jdbcType=DECIMAL}
+		</if>
+		<if test="createTime != null">
+		,CREATE_TIME = #{createTime,jdbcType=TIMESTAMP}
+		</if>
+		<if test="updateTime != null">
+		,UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP}
+		</if>
+	</set>
+	where ID = #{id,jdbcType=DECIMAL} and version = #{version,jdbcType=DECIMAL}
+</update>
+<select id="findListForExample" parameterType="com.bbdog.demo.entity.Message" resultMap="MessageMap">
+	select
+	<include refid="m_Base_Column_List"/>
+	from message m
+	<include refid="common_query_condition"/>
+</select>
+<select id="findListForMap" parameterType="map" resultMap="MessageMap">
+	select
+	<include refid="m_Base_Column_List"/>
+	from message m
+	<include refid="common_query_condition"/>
+</select>
+<sql id="common_query_condition">
+	<where>
+		<if test="senderId != null">
+		AND m.SENDER_ID = #{senderId}
+		</if>
+		<if test="receiverId != null">
+		AND m.RECEIVER_ID = #{receiverId}
+		</if>
+		<if test="content != null">
+		AND m.CONTENT LIKE CONCAT('%',#{content},'%')
+		</if>
+		<if test="title != null">
+		AND m.TITLE LIKE CONCAT('%',#{title},'%')
+		</if>
+		<if test="type != null">
+		AND m.TYPE = #{type}
+		</if>
+		<if test="id != null">
+		AND m.ID = #{id}
+		</if>
+		<if test="version != null">
+		AND m.VERSION = #{version}
+		</if>
+		<if test="createTimeBegin != null">
+		<![CDATA[AND m.CREATE_TIME >= STR_TO_DATE(#{createTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="createTimeEnd != null">
+		<![CDATA[AND m.CREATE_TIME <= STR_TO_DATE(#{createTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeBegin != null">
+		<![CDATA[AND m.UPDATE_TIME >= STR_TO_DATE(#{updateTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeEnd != null">
+		<![CDATA[AND m.UPDATE_TIME <= STR_TO_DATE(#{updateTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+	</where>
+</sql>
+</mapper>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bbdog.demo.mapper.UserRoleMapper">
+<!--<cache eviction="LRU" type="org.mybatis.caches.memcached.MemcachedCache"/>-->
+<resultMap id="UserRoleMap" type="com.bbdog.demo.entity.UserRole">
+	<result column="USER_ID" jdbcType="DECIMAL" property="userId"/>
+	<result column="ROLE_ID" jdbcType="DECIMAL" property="roleId"/>
+	<result column="ID" jdbcType="DECIMAL" property="id"/>
+	<result column="VERSION" jdbcType="DECIMAL" property="version"/>
+	<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+	<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime"/>
+</resultMap>
+<sql id="Base_Column_List">
+	USER_ID,ROLE_ID,ID,VERSION,CREATE_TIME,UPDATE_TIME
+</sql>
+<sql id="sur_Base_Column_List">
+	sur.USER_ID,sur.ROLE_ID,sur.ID,sur.VERSION,sur.CREATE_TIME,sur.UPDATE_TIME
+</sql>
+<select id="get" parameterType="long" resultMap="UserRoleMap">
+	select
+		<include refid="Base_Column_List"/>
+	from sys_user_role sur
+	where ID = #{id,jdbcType=DECIMAL}
+</select>
+<delete id="delete" parameterType="long">
+	delete
+	from sys_user_role sur
+	where ID = #{id,jdbcType=DECIMAL}
+</delete>
+<insert id="insert" parameterType="com.bbdog.demo.entity.UserRole">
+	insert into sys_user_role(
+		<include refid="Base_Column_List"/>
+	) values (
+	#{userId,jdbcType=DECIMAL},
+	#{roleId,jdbcType=DECIMAL},
+	#{id,jdbcType=DECIMAL},
+	#{version,jdbcType=DECIMAL},
+	#{createTime,jdbcType=TIMESTAMP},
+	#{updateTime,jdbcType=TIMESTAMP}
+	)
+</insert>
+<update id="update" parameterType="com.bbdog.demo.entity.UserRole">
+	update sys_user_role sur
+	<set>
+		VERSION = VERSION + 1
+		<if test="userId != null">
+		,USER_ID = #{userId,jdbcType=DECIMAL}
+		</if>
+		<if test="roleId != null">
+		,ROLE_ID = #{roleId,jdbcType=DECIMAL}
+		</if>
+		<if test="createTime != null">
+		,CREATE_TIME = #{createTime,jdbcType=TIMESTAMP}
+		</if>
+		<if test="updateTime != null">
+		,UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP}
+		</if>
+	</set>
+	where ID = #{id,jdbcType=DECIMAL} and version = #{version,jdbcType=DECIMAL}
+</update>
+<select id="findListForExample" parameterType="com.bbdog.demo.entity.UserRole" resultMap="UserRoleMap">
+	select
+	<include refid="sur_Base_Column_List"/>
+	from sys_user_role sur
+	<include refid="common_query_condition"/>
+</select>
+<select id="findListForMap" parameterType="map" resultMap="UserRoleMap">
+	select
+	<include refid="sur_Base_Column_List"/>
+	from sys_user_role sur
+	<include refid="common_query_condition"/>
+</select>
+<sql id="common_query_condition">
+	<where>
+		<if test="userId != null">
+		AND sur.USER_ID = #{userId}
+		</if>
+		<if test="roleId != null">
+		AND sur.ROLE_ID = #{roleId}
+		</if>
+		<if test="id != null">
+		AND sur.ID = #{id}
+		</if>
+		<if test="version != null">
+		AND sur.VERSION = #{version}
+		</if>
+		<if test="createTimeBegin != null">
+		<![CDATA[AND sur.CREATE_TIME >= STR_TO_DATE(#{createTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="createTimeEnd != null">
+		<![CDATA[AND sur.CREATE_TIME <= STR_TO_DATE(#{createTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeBegin != null">
+		<![CDATA[AND sur.UPDATE_TIME >= STR_TO_DATE(#{updateTimeBegin},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+		<if test="updateTimeEnd != null">
+		<![CDATA[AND sur.UPDATE_TIME <= STR_TO_DATE(#{updateTimeEnd},'%Y-%m-%d %H:%i:%s')]]>
+		</if>
+	</where>
+</sql>
+	<select id="listUserRoleByUserId" parameterType="long" resultMap="UserRoleMap">
+		select
+		<include refid="sur_Base_Column_List"/>
+		from
+			sys_user_role sur
+		where
+			sur.USER_ID = #{userId,jdbcType=DECIMAL}
+	</select>
+</mapper>
